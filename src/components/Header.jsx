@@ -1,6 +1,7 @@
 import React from "react";
 import { UserIcon } from "@heroicons/react/24/solid";
 import logo from "../assets/images/logo-itinerary.png";
+import { Link as LinkRouter } from "react-router-dom";
 const Header = () => {
   return (
     <nav className="p-4">
@@ -12,21 +13,26 @@ const Header = () => {
 
           <ul className="flex space-x-4 items-center">
             <li>
-              <a href="#" className="hover:text-gray-300 font-bold">
+              <LinkRouter to="/home" className="hover:text-gray-300 font-bold">
                 Home
-              </a>
+              </LinkRouter>
             </li>
             <li>
-              <a
-                href="#"
-                className="hover:text-gray-300 font-bold align-middle"
+              <LinkRouter
+                to="/cities"
+                className="hover:text-gray-300 font-bold"
               >
                 Cities
-              </a>
+              </LinkRouter>
             </li>
-            <li className="button-blue flex items-center">
-              <UserIcon className="h-3 w-3 me-1" />
-              <a href="#">Login</a>
+            <li>
+              <LinkRouter
+                to="/signin"
+                className="button-blue w-full flex items-center hover:text-gray-300 font-bold"
+              >
+                <UserIcon className="h-3 w-3 me-1" />
+                Login
+              </LinkRouter>
             </li>
           </ul>
         </div>
