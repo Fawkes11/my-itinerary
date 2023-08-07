@@ -11,6 +11,10 @@ export default {
           500: '#4F46E5',
           700: '#3f3797'
         }
+      },
+      brightness: {
+        40: '.40',
+        175: '1.75',
       }
     },
     fontFamily: {
