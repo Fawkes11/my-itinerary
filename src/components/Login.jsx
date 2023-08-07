@@ -2,12 +2,12 @@ import React from "react";
 
 const Login = () => {
   return (
-    <div className="container mx-auto max-w-md shadow py-12 px-8 rounded-lg font-sans">
-      <h1 className="text-3xl font-bold">Welcome back</h1>
-      <div className="w-full flex justify-evenly mt-6">
+    <div className="container w-80 sm:w-full mx-auto max-w-md shadow py-2 sm:py-12 px-8 rounded-lg font-sans bg-white">
+      <h1 className="text-xl sm:text-3xl font-bold">Welcome back</h1>
+      <div className="w-full flex flex-col sm:flex-row justify-evenly mt-1  sm:mt-6">
         <a
           href="#"
-          className="flex items-center justify-center p-2 rounded-lg border border-gray-300 bg-white hover:bg-gray-100 transition duration-300 ease-in-out"
+          className="flex items-center justify-center p-2 rounded-lg border border-gray-300 bg-white hover:bg-gray-100 transition duration-300 ease-in-out mb-4 sm:mb-0"
         >
           <svg
             className="w-6 h-6 me-2"
@@ -108,7 +108,7 @@ const Login = () => {
             required
           />
         </div>
-        <div className="flex items-center justify-between mb-4">
+        <div className="flex flex-col sm:flex-row items-center justify-between mb-4">
           <div className="flex items-center">
             <input
               id="remember"
